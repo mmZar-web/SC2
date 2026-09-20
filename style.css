@@ -539,3 +539,19 @@ footer {
         print-color-adjust: exact;
     }
 }
+
+/* Curse / challenge page */
+.challenge-table .planet { width: 9%; }
+.challenge-table .mission { width: 15%; }
+.challenge-table .challenge { width: 25%; }
+.curse-badge { font-size:11px; font-weight:700; border-radius:4px; padding:1px 7px; white-space:nowrap; color:#8a3d32; background:#f8e8e4; }
+
+/* Patch notes */
+.patch-list { display:grid; gap:18px; }
+.patch.release { margin-bottom:0; }
+.patch h3 { font-size:15px; color:var(--green); margin:22px 0 6px; }
+.patch ul { margin:6px 0 0; padding-left:22px; }
+.patch li + li { margin-top:5px; }
+@media (max-width:700px){
+  .challenge-table .planet{width:10%}.challenge-table .mission{width:20%}.challenge-table .challenge{width:30%}
+}
