@@ -6,7 +6,66 @@
 <main>
 <a class="home" href="index.html">← 메인으로</a>
 <div class="patch-list">
-<article class="patch release"><div class="release-head"><div><span class="version">v1.1</span><span class="latest">최신 버전</span></div><span class="date">2026-09-19</span></div><h3>개선</h3><ul><li>로딩 개선</li></ul></article>
+<article class="patch release">
+<div class="release-head"><div><span class="version">v1.2</span><span class="latest">최신 버전</span></div><span class="date">2026-09-24</span></div>
+<h3>버그 수정</h3>
+<ul>
+<li>거대 괴수 저장을 불러왔을 때 저장 당시가 아닌 최신 재능·저주가 적용되던 문제 수정.</li>
+<li>임무 재시작 시 해당 임무에서 획득한 재능·저주·도전이 남던 문제 수정.</li>
+<li>일벌레 가격 할인에 따라 건설 비용이 증가하던 문제 수정.</li>
+<li>원시 벌레·진균 살포충의 건설 비용이 기본 자원 아이콘으로 표시되도록 수정.</li>
+<li>케리건의 일부 스킬에 필요 에너지가 표시되지 않던 문제 수정.</li>
+<li>초월 상태에서 감염 공생충이 작동하지 않던 문제 수정.</li>
+<li>초월여왕 도전의 자가라 공격력 증가 적용 방식 수정.</li>
+<li>니아드라가 군단충 보유 시 저글링을 2마리만 생산하던 문제 수정.</li>
+<li>‘감염’의 점막 확산 보조 목표가 재능 선택을 한 번만 주던 문제 수정.</li>
+<li>‘이런 친구들과 함께라면’의 해적선 재능 상자가 작동하지 않던 문제 수정. 처치 시 직접 재능 선택 제공.</li>
+<li>‘공허의 환영’의 추가 혼종 파멸자·거대 혼종이 능력을 사용하지 않던 문제 수정.</li>
+<li>‘확신’에서 벽을 파괴하며 정신집중 중인 케리건이 도전 장판 피해를 받지 않도록 수정.</li>
+<li>케리건 잠복·잠복 해제 아이콘과 일부 재능·도전의 누락 아이콘 보완.</li>
+<li>젤나가 케리건 초상화에 기존 인간·원시 케리건의 모델이 겹치는 문제 수정.</li>
+<li>케리건 레벨이 100 이상일 경우 표시되지 않는 문제 수정.</li>
+<li>‘심판’의 불필요한 경비로봇 제거 및 재생성 차단 보완.</li>
+<li>‘실험실의 쥐’의 저글링 생산 목표에 랩터·군단충을 포함하고, 후속 안내·연출 처리도 변종을 인식하도록 수정.</li>
+</ul>
+<h3>밸런스·기능 패치</h3>
+<h4>성능 및 케리건 성장</h4>
+<ul>
+<li>케리건 최대 레벨을 <strong>2,700</strong>으로 조정하여 로딩·인게임 연출 전환 부담 완화.</li>
+<li>케리건 기본 표시 레벨을 <strong>0</strong>으로 변경.</li>
+<li>일반/고급/희귀/서사 레벨 재능의 증가량을 <strong>5/10/20/30 → 3/7/13/20</strong>으로 조정. 초월의 +50은 유지.</li>
+</ul>
+<h4>재능 및 상점</h4>
+<ul>
+<li>상점 재능도 일반 재능 추첨처럼 <strong>등급마다 25% 확률로 승급</strong>하도록 변경.</li>
+<li>일반~전설 가격을 <strong>2/4/8/16/32 → 2/4/6/10/18</strong>로 인하.</li>
+<li><strong>특출난 변이:</strong> 중첩당 생명력 <strong>25%</strong>, 피해량 <strong>20%</strong> 증가로 상향.</li>
+<li><strong>부식성 점막:</strong> 기본 피해를 초당 <strong>2</strong>로 조정. 특출난 변이의 피해량 증가 적용.</li>
+<li><strong>협동전의 방식:</strong> 점막 확산 속도를 최종적으로 <strong>0.5배</strong>로 조정.</li>
+<li><strong>부식성 점막·여왕의 승부수:</strong> 주 부화장 계열 건물에 켜기/끄기 기능 추가.</li>
+<li><strong>변종: 사냥꾼:</strong> 단독 보유 시 원본 캠페인 사양 적용.</li>
+<li><strong>위상 맹독 + 변종: 사냥꾼:</strong> 도약 사거리 +3, 도약 속도 대폭 증가 및 착지 후 폭발 반응 개선.</li>
+<li><strong>연쇄 반응:</strong> 비초월 상태의 연쇄 피해를 <code>max(10, 일반 공격 피해 ÷ 4)</code>로 조정. 초월과 함께 보유하면 일반 공격력 <strong>+20</strong> 적용.</li>
+<li><strong>도약 공격·사이오닉 돌진:</strong> 재능 목록에서 제거하고 ‘약육강식’ 시작 시 자동 지급. 초월 보유 여부와 무관하며 기존 공격력·이동 속도 지속 효과도 유지.</li>
+<li>희귀 재능 <strong>무자비</strong> 추가: 도약 공격 피해 <strong>300</strong>, 사거리 <strong>12</strong>, 사이오닉 돌진 피해 <strong>100</strong>, 에너지 폭발·파괴의 손아귀 재사용 대기시간 절반.</li>
+<li><strong>제루스의 역습:</strong> 우두머리 사망 후 다시 누적하여 재등장할 수 있다는 실제 동작에 맞춰 설명 수정.</li>
+</ul>
+<h4>임무 및 보상</h4>
+<ul>
+<li>유닛 해금 임무 10개에서 게임 시작시 해금된 유닛의 일반 재능 제시.</li>
+<li><strong>시련:</strong> 지정 보상을 맹독충 생성·치유·무자비로 변경. 남는 칸은 고급부터 추첨.</li>
+<li><strong>심판:</strong> 기존 지정 보상 2개를 제외한 칸은 전설 재능으로 제시.</li>
+<li><strong>고대의 각성:</strong> 퀼고르 7마리 외에 원시 군락 4개 파괴로도 브라크가 등장하는 대체 목표 추가.</li>
+<li><strong>행성 침공:</strong> 파괴 가능한 적 구조물 전멸 시 승리하는 대체 조건 추가.</li>
+<li><strong>심판:</strong> 스투코프 증원이 멩스크 진영 구조물을 공격하도록 변경. 레이너와의 적대 관계는 유지.</li>
+<li><strong>내부의 적:</strong> 초반 애벌레 구간을 건너뛰고 니아드라의 첫 무리어미 진화 직전부터 시작. <code>-easymode</code>로 인구수 한도 +50.</li>
+<li><strong>이런 친구들과 함께라면:</strong> <code>-easymode</code>의 3대 동시 공격 효과를 제거하고 야마토 포 재사용 대기시간 제거로 변경.</li>
+<li><strong>하늘에서 죽음이:</strong> 데하카 부활 시간을 <strong>1초</strong>로 변경.</li>
+<li><strong>이불 밖은 위험해·지도자 암살:</strong> 데하카 관련 효과 제거.</li>
+<li><strong>실험실의 쥐:</strong> 첫 부화장의 애벌레를 총 <strong>3마리</strong>로 시작하도록 변경.</li>
+</ul>
+</article>
+<article class="patch release"><div class="release-head"><div><span class="version">v1.1</span></div><span class="date">2026-09-19</span></div><h3>개선</h3><ul><li>로딩 개선</li></ul></article>
 <article class="patch release"><div class="release-head"><div><span class="version">v1.0</span></div><span class="date">2026-09-18</span></div><h3>최초 공개</h3><ul><li>군단의 심장 로그라이크 전설 최초 공개 버전</li></ul><h3>원본 대비 주요 변경 사항</h3><ul><li>전설 등급 추가</li><li>재능 상자 삭제</li><li>재능 상점 추가</li><li>임무에서 지급하던 케리건 레벨을 군단 정수로 대체</li><li>케리건 레벨을 재능을 통해 획득하도록 변경</li><li>진화 임무 삭제</li><li>일부 임무의 도전 내용 변경</li><li>이즈샤 정수 구현</li></ul></article>
 </div>
 <footer>새 버전은 위에 추가하고, 변경 내용을 항목별로 나누어 기록하면 됩니다.</footer>
